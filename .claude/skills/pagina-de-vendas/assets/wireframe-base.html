@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[PRODUTO] — [promessa em uma linha]</title>
+<!--
+  WIREFRAME DE COPY — [Produto] · [cliente] · [AAAA-MM-DD]
+  Persona Profunda de referência: [caminho do persona-profunda-*.md + N do corpus, ou "esqueleto v5 genérico"]
+  Esqueleto de referência: [caminho do raio-X que originou a ordem dos blocos]
+
+  Como ler: cada <section> é um bloco. O comentário acima de cada bloco traz a
+  seção-motor da persona profunda que o originou. Caixas vermelhas (.nota) são pedidos de
+  produção — o que precisa vir do cliente antes de publicar.
+-->
+<style>
+/* ───────────────────────────────────────────────────────────────
+   PALETA — trocar por marca/design-guide.md do cliente.
+   Só mexer aqui: os componentes herdam tudo daqui.
+   ─────────────────────────────────────────────────────────────── */
+:root{
+  --bg:#F4F3F0;          /* fundo da página */
+  --bg-alt:#EBEAE5;      /* fundo das seções alternadas */
+  --ink:#171512;         /* texto principal */
+  --ink-soft:#57534C;    /* texto secundário */
+  --brand:#1F4E3D;       /* cor da marca — títulos de destaque, colunas positivas */
+  --brand-deep:#122E24;  /* versão escura — seções dark */
+  --brand-soft:#8FBFA8;  /* versão clara — números, ícones sobre fundo escuro */
+  --accent:#C8963E;      /* destaque — grifo, tags, preço */
+  --cta:#1F9D55;         /* botão */
+  --line:#D7D5CE;
+  --white:#fff;
+  --red:#B4342A;         /* SÓ para notas de produção */
+  --red-bg:#FCE6E3;
+  --radius:22px;
+  --max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter','Helvetica Neue',system-ui,-apple-system,sans-serif;
+  font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+section{padding:72px 24px}
+section.alt{background:var(--bg-alt)}
+section.dark{background:var(--brand-deep);color:#fff}
+section.dark h2,section.dark h3{color:#fff}
+section.dark .lead{color:#B9D3C6}
+.wrap{max-width:var(--max);margin:0 auto}
+.narrow{max-width:760px;margin:0 auto}
+.center{text-align:center}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:700}
+h1{font-size:clamp(30px,4.4vw,52px)}
+h2{font-size:clamp(25px,3.4vw,38px)}
+h3{font-size:20px}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-soft)}
+.hl{background:linear-gradient(180deg,transparent 62%,var(--accent) 62%);padding:0 2px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brand)}
+.mt8{margin-top:8px}.mt16{margin-top:16px}.mt24{margin-top:24px}
+.mt32{margin-top:32px}.mt40{margin-top:40px}.mt56{margin-top:56px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:820px){.g2,.g3{grid-template-columns:1fr}}
+
+/* ── SLOT DE IMAGEM — toda imagem vira um destes, numerado FOTO 01, 02… ── */
+.slot{
+  border:2px dashed #B6B3AA;border-radius:var(--radius);background:#E2E0DA;
+  min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:24px;color:#6E6A61;font-size:14px;font-weight:500;line-height:1.45;
+}
+.slot b{display:block;color:var(--red);font-size:12px;letter-spacing:.12em;margin-bottom:8px}
+
+/* ── NOTA DE PRODUÇÃO — o que falta vir do cliente. Nunca usar pra copy. ── */
+.nota{
+  background:var(--red-bg);color:var(--red);font-size:13.5px;font-weight:500;
+  border-radius:12px;padding:12px 16px;display:block;line-height:1.45;
+}
+
+/* ── CTA ── */
+.cta{
+  display:inline-block;background:var(--cta);color:#fff;text-decoration:none;
+  font-weight:700;font-size:clamp(15px,2vw,19px);padding:20px 40px;border-radius:60px;
+  box-shadow:0 10px 28px rgba(31,157,85,.3);transition:transform .18s ease;
+}
+.cta:hover{transform:translateY(-2px)}
+.cta:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.cta-sub{font-size:13px;color:var(--ink-soft);margin-top:12px}
+.selo-check{display:inline-block;background:var(--white);border:1px solid var(--line);
+  border-radius:40px;padding:8px 18px;font-size:14px;font-weight:600}
+
+/* ── S5 · BALÃO (conversas internas) ── */
+.balao{
+  background:var(--white);border-radius:20px;padding:18px 22px;font-size:15.5px;font-style:italic;
+  box-shadow:0 4px 18px rgba(0,0,0,.06);position:relative;
+}
+.balao::after{content:"";position:absolute;bottom:-8px;left:30px;width:16px;height:16px;
+  background:var(--white);transform:rotate(45deg)}
+
+/* ── S3 · SINTOMA (card ✕) ── */
+.sintoma{background:var(--white);border-left:4px solid var(--red);border-radius:12px;
+  padding:16px 18px;font-size:15.5px;font-weight:500;display:flex;gap:10px}
+.sintoma span{color:var(--red);font-weight:800}
+
+/* ── S8/S2 · ERRO (o que quase todo mundo faz) ── */
+.erro{background:var(--brand-deep);color:#fff;border-radius:18px;padding:20px;
+  font-weight:600;font-size:15.5px;display:flex;gap:10px}
+.erro span{color:#FF9686;font-weight:800}
+
+/* ── S3×S8×S2 · TABELA DE DIAGNÓSTICO ── */
+.diag{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.diag-row{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:0}
+.diag-row>div{padding:16px 18px;border-bottom:1px solid var(--line);font-size:15px}
+.diag-row.head>div{background:var(--brand-deep);color:#fff;font-weight:700;font-size:13.5px;
+  text-transform:uppercase;letter-spacing:.08em}
+.diag-row .s{background:var(--white);font-weight:600}
+.diag-row .e{background:#F6EEEC;color:var(--red)}
+.diag-row .c{background:var(--white);color:var(--ink-soft)}
+@media(max-width:820px){.diag-row{grid-template-columns:1fr}}
+
+/* ── S8 · COMPARATIVO ── */
+.vs{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:center}
+@media(max-width:820px){.vs{grid-template-columns:1fr}}
+.vs-col{border-radius:var(--radius);padding:28px}
+.vs-a{background:#E4E2DC}
+.vs-b{background:var(--brand);color:#fff}
+.vs-mid{text-align:center;font-weight:800;font-size:15px;letter-spacing:.1em;color:var(--ink-soft)}
+.vs-col ul{list-style:none}
+.vs-col li{display:flex;gap:10px;padding:9px 0;font-size:15.5px}
+.vs-a li b{color:var(--red)}
+.vs-b li b{color:var(--brand-soft)}
+
+/* ── S6 · ANTES × DEPOIS ── */
+.ad{border-radius:var(--radius);overflow:hidden}
+.ad-head{padding:14px;font-weight:700;text-align:center;font-size:14px;
+  letter-spacing:.08em;text-transform:uppercase}
+.ad-body{padding:22px}
+.ad-body li{list-style:none;padding:10px 0;font-size:15px;border-bottom:1px solid rgba(0,0,0,.07)}
+.ad-body li:last-child{border:0}
+.ad-antes .ad-head{background:#CFCCC5}
+.ad-antes .ad-body{background:#E4E2DC}
+.ad-depois .ad-head{background:var(--brand-deep);color:#fff}
+.ad-depois .ad-body{background:var(--brand);color:#fff}
+.ad-depois li{border-color:rgba(255,255,255,.18)}
+
+/* ── S4.2 · PROMESSA NUMERADA ── */
+.promessa{background:var(--white);border-radius:var(--radius);padding:26px}
+.promessa .n{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--accent)}
+.promessa h3{margin:10px 0 8px}
+
+/* ── CARD DE BENEFÍCIO / PILAR ── */
+.card{background:var(--white);border-radius:var(--radius);padding:24px}
+.card h3{margin-bottom:8px}
+.card p{font-size:15px;color:var(--ink-soft)}
+.pilar{background:var(--brand);color:#fff;border-radius:var(--radius);padding:28px}
+.pilar .num{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--brand-soft)}
+.pilar h3{margin:10px 0 8px}
+.pilar p{font-size:15px;color:#D3E7DD}
+
+/* ── ENTREGÁVEL / BÔNUS EM ZIGUE-ZAGUE ── */
+.zig{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin-bottom:36px}
+.zig.rev .zig-txt{order:2}
+@media(max-width:820px){.zig{grid-template-columns:1fr}.zig.rev .zig-txt{order:0}}
+.tag{display:inline-block;background:var(--brand-deep);color:#fff;font-size:12px;font-weight:700;
+  letter-spacing:.12em;padding:5px 12px;border-radius:40px;text-transform:uppercase}
+.tag.bonus{background:var(--accent)}
+
+/* ── S11 · CHECKLIST "PARA QUEM É" ── */
+.check li{list-style:none;display:flex;gap:12px;padding:11px 0;font-size:16.5px;align-items:flex-start}
+.check li b{color:var(--brand);font-size:19px;line-height:1.2}
+
+/* ── S9.1 · STACK DE VALOR ── */
+.recap{background:var(--white);border-radius:var(--radius);padding:32px}
+.recap ul{list-style:none}
+.recap li{display:flex;justify-content:space-between;gap:12px;font-weight:600;
+  padding:12px 0;border-bottom:1px dashed var(--line);font-size:16px}
+.recap li:last-child{border:0}
+.recap s{color:#8E8A82;font-weight:500}
+.recap .total{margin-top:20px;padding-top:20px;border-top:2px solid var(--ink);text-align:center}
+.recap .total .rot{font-size:14px;color:var(--ink-soft)}
+.recap .total .val{font-size:30px;font-weight:800;text-decoration:line-through;color:#8E8A82}
+
+/* ── S7.5 · CAIXA DE OFERTA ── */
+.oferta-box{background:var(--white);border-radius:26px;padding:32px;text-align:center;
+  box-shadow:0 14px 40px rgba(0,0,0,.1)}
+.oferta-box .de{color:var(--ink-soft);font-size:16px}
+.oferta-box .val{font-size:clamp(40px,7vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--brand)}
+.oferta-box .mes{font-size:15px;color:var(--ink-soft);margin-top:6px}
+.selos{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px;
+  font-size:11.5px;color:var(--ink-soft);font-weight:600;letter-spacing:.04em}
+
+/* ── PASSO A PASSO ── */
+.passo{background:var(--brand);color:#fff;border-radius:var(--radius);padding:28px;text-align:center}
+.passo .n{width:38px;height:38px;border-radius:50%;background:#fff;color:var(--brand);font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.passo p{color:#D3E7DD;font-size:15px;margin-top:6px}
+
+/* ── S6 · DUAS ESCOLHAS ── */
+.esc{border-radius:var(--radius);padding:28px;text-align:center}
+.esc-1{background:#E4E2DC}
+.esc-2{background:var(--brand);color:#fff}
+.esc .rot{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.esc h3{margin:10px 0}
+.esc .ic{font-size:26px;display:block;margin:12px 0}
+
+/* ── GARANTIA ── */
+.gar{background:var(--white);border-radius:var(--radius);padding:34px;display:grid;
+  grid-template-columns:120px 1fr;gap:28px;align-items:center}
+@media(max-width:820px){.gar{grid-template-columns:1fr;text-align:center}}
+.selo-g{width:104px;height:104px;border-radius:50%;background:var(--brand);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;
+  line-height:1.1;text-align:center;margin:0 auto}
+
+/* ── FAQ ── */
+details{background:var(--white);border-radius:16px;padding:18px 22px;margin-bottom:10px}
+details summary{font-weight:600;cursor:pointer;font-size:16.5px;list-style:none;
+  display:flex;justify-content:space-between;gap:16px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--brand);font-weight:800;font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:12px;color:var(--ink-soft);font-size:15.5px}
+
+footer{background:var(--brand-deep);color:#93A79B;padding:48px 24px;text-align:center;font-size:13px}
+footer a{color:#B9D3C6}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ OS BLOCOS ENTRAM AQUI ═══════════
+     Um <section> por bloco. Acima de cada um, um comentário no formato:
+     <!-- ══ NN · NOME DO BLOCO ══ | motor: SX · suporte: SY | verbatim: "…" -- >
+     Ver references/blocos-html.md para o snippet de cada componente.
+-->
+
+<!-- ═══════════ RASTREABILIDADE ═══════════
+     Tabela completa bloco → seção → linha da persona profunda → verbatim.
+     Fica em comentário: não aparece na página, viaja junto com o arquivo.
+-->
+
+</body>
+</html>

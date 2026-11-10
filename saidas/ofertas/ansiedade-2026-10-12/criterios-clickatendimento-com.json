@@ -1,0 +1,43 @@
+{
+ "oferta": "clickatendimento.com",
+ "url": "https://clickatendimento.com/lp5",
+ "plataforma": null,
+ "checkout": null,
+ "precos_na_pagina": [
+  50.0,
+  120.0
+ ],
+ "prova_de_mercado": {
+  "ativos": 12,
+  "novos_15d": 0,
+  "passaram_teste": 4,
+  "anunciantes": 3,
+  "criativos": 4,
+  "max_dias": 149
+ },
+ "pontos_mercado": 12,
+ "pontos_pagina": 7,
+ "qualidade_pagina_0a5": null,
+ "risco_nicho": "alto",
+ "temperatura": null,
+ "blueprint": null,
+ "satisfacao": null,
+ "comissao": null,
+ "preco": 50.0,
+ "observacoes": "",
+ "_pagina": {
+  "titulo": "Click Cannabis — Encontre seu Médico Prescritor",
+  "segundos": 0.6,
+  "tem_garantia": false,
+  "tem_depoimentos": false,
+  "erro": null,
+  "resumo_pagina": "Médicos Prescritores de Cannabis Medicinal Selecione uma ou mais patologias para ser atendido Insônia Ansiedade Depressão Dores Perda de Peso TDAH Enxaqueca Tabagismo Iniciar meu Tratamento Histórias reais de pacientes com insônia Miguel F. Ansiedade · Insônia Flavia G. Insônia Eduardo P. Ansiedade · Compulsão alimentar · Dores · Insônia · Obesidade · Perda de peso · TDAH Alexandre A. Ansiedade · Dores · Insônia Rafaella B. Ansiedade · Dores · Enxaqueca · Insônia Miguel F. Ansiedade · Insônia Flavia G. Insônia Eduardo P. Ansiedade · Compulsão alimentar · Dores · Insônia · Obesidade · Perda de peso · TDAH Alexandre A. Ansiedade · Dores · Insônia Rafaella B. Ansiedade · Dores · Enxaqueca · Insônia Medicamentos Formas de consumo Importação legalizada pela ANVISA. 01. Óleo de Cannabis Medicinal Aplicado sob a língua, o óleo é absorvido pela mucosa bucal, o que permite sua rápida entrada na corrente sanguínea, uma opção de resposta ágil e controlada. 02. Jujuba de Cannabis Medicinal A jujuba proporciona uma forma prática, saborosa e discreta de consumo. Embora a absorção seja mais lenta por depender da digestão, os efeitos tendem a ser mais prolongados. 03. Softgel de Cannabis Medicinal Forma prática, precisa e discreta de consumir cannabis medicinal. Com dosagem padronizada, são ingeridas por via oral e absorvidas gradualmente pelo organismo, proporcionando efeitos prolongados e estáveis. Iniciar meu Tratamento Processos Tratamento descomplicado Entenda cada uma das nossas etapas"
+ },
+ "_links_biblioteca": [
+  "https://www.facebook.com/ads/library/?id=1471445277346009",
+  "https://www.facebook.com/ads/library/?id=1661647204944147",
+  "https://www.facebook.com/ads/library/?id=1837602150936981",
+  "https://www.facebook.com/ads/library/?id=1309554904144553"
+ ],
+ "_nota_previa": 56
+}

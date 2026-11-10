@@ -1,0 +1,102 @@
+{
+ "oração": {
+  "volume": 339,
+  "variacao": -4
+ },
+ "excel": {
+  "volume": 265,
+  "variacao": 1
+ },
+ "ansiedade": {
+  "volume": 170,
+  "variacao": -4
+ },
+ "air fryer": {
+  "volume": 160,
+  "variacao": -14
+ },
+ "maquiagem": {
+  "volume": 148,
+  "variacao": 6
+ },
+ "crochê": {
+  "volume": 122,
+  "variacao": -8
+ },
+ "emagrecer": {
+  "volume": 106,
+  "variacao": -14
+ },
+ "violão": {
+  "volume": 91,
+  "variacao": -3
+ },
+ "cabelo cacheado": {
+  "volume": 88,
+  "variacao": -2
+ },
+ "tarot": {
+  "volume": 83,
+  "variacao": -5
+ },
+ "costura": {
+  "volume": 82,
+  "variacao": -5
+ },
+ "pilates": {
+  "volume": 82,
+  "variacao": 0
+ },
+ "marmita": {
+  "volume": 62,
+  "variacao": -9
+ },
+ "sobrancelha": {
+  "volume": 62,
+  "variacao": -9
+ },
+ "concurso público": {
+  "volume": 60,
+  "variacao": -12
+ },
+ "confeitaria": {
+  "volume": 52,
+  "variacao": -15
+ },
+ "alfabetização": {
+  "volume": 34,
+  "variacao": 0
+ },
+ "atividades para imprimir": {
+  "volume": 10,
+  "variacao": -20
+ },
+ "unhas de gel": {
+  "volume": 10,
+  "variacao": -9
+ },
+ "bolo de pote": {
+  "volume": 9,
+  "variacao": -11
+ },
+ "curso de inglês": {
+  "volume": 6,
+  "variacao": -21
+ },
+ "renda extra": {
+  "volume": 6,
+  "variacao": -13
+ },
+ "treino em casa": {
+  "volume": 6,
+  "variacao": -13
+ },
+ "parar de fumar": {
+  "volume": 9,
+  "variacao": -21
+ },
+ "adestramento": {
+  "volume": 2,
+  "variacao": -25
+ }
+}

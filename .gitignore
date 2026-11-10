@@ -1,0 +1,37 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Claude Code (sessões locais, não devem ir pro repo)
+.claude/projects/
+.claude/sessions/
+.claude/shell-snapshots/
+.claude/telemetry/
+.claude/file-history/
+.claude/backups/
+
+# Dependências
+node_modules/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Drop zone do usuário (só o README vai versionado)
+dados/*
+!dados/README.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Imagens baixadas pelo espião (dá pra baixar de novo)
+marketing/espiao/*/imagens/
+
+# Robô de acompanhamento: registros de execução
+sistema/acompanhamento/log.txt
+sistema/acompanhamento/saida-ultima-rodada.txt

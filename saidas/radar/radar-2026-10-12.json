@@ -1,0 +1,390 @@
+{
+ "google": {
+  "emagrecer": {
+   "volume": 106,
+   "variacao": -14
+  },
+  "dieta": {
+   "volume": 119,
+   "variacao": -11
+  },
+  "pilates": {
+   "volume": 82,
+   "variacao": 0
+  },
+  "treino em casa": {
+   "volume": 6,
+   "variacao": -13
+  },
+  "ansiedade": {
+   "volume": 171,
+   "variacao": -4
+  },
+  "autoestima": {
+   "volume": 9,
+   "variacao": -1
+  },
+  "maquiagem": {
+   "volume": 148,
+   "variacao": 6
+  },
+  "skincare": {
+   "volume": 27,
+   "variacao": 5
+  },
+  "sobrancelha": {
+   "volume": 62,
+   "variacao": -9
+  },
+  "unhas": {
+   "volume": 121,
+   "variacao": -4
+  },
+  "cabelo cacheado": {
+   "volume": 88,
+   "variacao": -2
+  },
+  "crochê": {
+   "volume": 122,
+   "variacao": -8
+  },
+  "costura": {
+   "volume": 82,
+   "variacao": -5
+  },
+  "bordado": {
+   "volume": 45,
+   "variacao": -9
+  },
+  "artesanato": {
+   "volume": 46,
+   "variacao": -8
+  },
+  "confeitaria": {
+   "volume": 52,
+   "variacao": -15
+  },
+  "air fryer": {
+   "volume": 160,
+   "variacao": -14
+  },
+  "marmita": {
+   "volume": 62,
+   "variacao": -8
+  },
+  "receitas fáceis": {
+   "volume": 0,
+   "variacao": 16
+  },
+  "excel": {
+   "volume": 265,
+   "variacao": 1
+  },
+  "inglês": {
+   "volume": 881,
+   "variacao": -6
+  },
+  "concurso público": {
+   "volume": 61,
+   "variacao": -12
+  },
+  "enem": {
+   "volume": 263,
+   "variacao": 35
+  },
+  "alfabetização": {
+   "volume": 34,
+   "variacao": -1
+  },
+  "atividades para imprimir": {
+   "volume": 10,
+   "variacao": -20
+  },
+  "aprender a desenhar": {
+   "volume": 0,
+   "variacao": 393
+  },
+  "violão": {
+   "volume": 91,
+   "variacao": -3
+  },
+  "edição de vídeo": {
+   "volume": 2,
+   "variacao": 1
+  },
+  "renda extra": {
+   "volume": 6,
+   "variacao": -16
+  },
+  "vender pela internet": {
+   "volume": 0,
+   "variacao": -100
+  },
+  "oração": {
+   "volume": 340,
+   "variacao": -4
+  },
+  "tarot": {
+   "volume": 83,
+   "variacao": -5
+  },
+  "reconquistar ex": {
+   "volume": 0,
+   "variacao": -100
+  },
+  "adestrar cachorro": {
+   "volume": 0,
+   "variacao": 16
+  },
+  "amamentação": {
+   "volume": 27,
+   "variacao": -14
+  }
+ },
+ "em_alta": {
+  "inglês": [
+   [
+    "outubro em inglês",
+    250
+   ],
+   [
+    "traduza something went wrong and an ai response wasn't generated. do inglês",
+    140
+   ],
+   [
+    "setembro em inglês",
+    60
+   ],
+   [
+    "linguee tradutor inglês português",
+    50
+   ],
+   [
+    "traduza dns_probe_finished_nxdomain do inglês",
+    40
+   ]
+  ],
+  "oração": [
+   [
+    "oração de cosme e damião",
+    350
+   ],
+   [
+    "oração de santa teresinha do menino jesus",
+    300
+   ],
+   [
+    "oração de santa terezinha",
+    250
+   ],
+   [
+    "oração de são francisco letra",
+    170
+   ],
+   [
+    "oração nossa senhora aparecida",
+    130
+   ],
+   [
+    "oração a nossa senhora aparecida",
+    120
+   ]
+  ],
+  "excel": [
+   [
+    "planilha de controle financeiro pessoal excel grátis",
+    50
+   ],
+   [
+    "como multiplicar no excel",
+    40
+   ],
+   [
+    "microsoft excel",
+    40
+   ]
+  ],
+  "enem": [
+   [
+    "simulado enem sed",
+    14300
+   ],
+   [
+    "enem wiki",
+    10250
+   ],
+   [
+    "cartilha redação enem 2026",
+    500
+   ],
+   [
+    "quem criou o enem",
+    450
+   ],
+   [
+    "cartilha enem 2026",
+    450
+   ],
+   [
+    "quem criou o enem no brasil",
+    400
+   ]
+  ],
+  "ansiedade": [
+   [
+    "mc iguinho menos foco mais ansiedade 2",
+    500
+   ],
+   [
+    "menos foco mais ansiedade 2",
+    200
+   ],
+   [
+    "menos foco mais ansiedade 2 letra",
+    170
+   ],
+   [
+    "lancem sobre ele toda a sua ansiedade porque ele tem cuidado de vocês",
+    130
+   ],
+   [
+    "menos foco mais ansiedade letra",
+    110
+   ],
+   [
+    "menos foco mais ansiedade",
+    80
+   ]
+  ],
+  "air fryer": [
+   [
+    "philco fritadeira air fryer 12l pt pfr2200p 220v",
+    450
+   ],
+   [
+    "air fryer cesto de vidro",
+    350
+   ],
+   [
+    "como assar batata doce na air fryer",
+    200
+   ],
+   [
+    "fritadeira philco air fryer oven 12l pfr2200p 127v",
+    140
+   ],
+   [
+    "air fryer com cesto de vidro",
+    120
+   ],
+   [
+    "fritadeira philco air fryer oven 12l pfr2200p",
+    120
+   ]
+  ],
+  "maquiagem": [
+   [
+    "maquiagem da minnie",
+    8800
+   ],
+   [
+    "maquiagem toy story boticario",
+    6500
+   ],
+   [
+    "maquiagem maluca",
+    1250
+   ],
+   [
+    "angélica sem maquiagem",
+    1150
+   ],
+   [
+    "maquiagem halloween feminina",
+    800
+   ],
+   [
+    "maquiagem alerquina",
+    650
+   ]
+  ],
+  "crochê": [
+   [
+    "pintura em crochê",
+    1000
+   ],
+   [
+    "dia mundial do crochê",
+    400
+   ],
+   [
+    "como fazer boné de crochê",
+    160
+   ],
+   [
+    "porta óculos de crochê",
+    140
+   ],
+   [
+    "dia do crochê",
+    100
+   ],
+   [
+    "bolsa de crochê infantil",
+    70
+   ]
+  ],
+  "unhas": [
+   [
+    "unhas de guria canoas",
+    400
+   ],
+   [
+    "usina das unhas",
+    200
+   ],
+   [
+    "unhas de terry",
+    150
+   ],
+   [
+    "ideias de unhas em gel",
+    90
+   ],
+   [
+    "unhas amendoadas decoradas",
+    70
+   ],
+   [
+    "unhas postiças realistas",
+    70
+   ]
+  ],
+  "dieta": [
+   [
+    "dieta kosher",
+    4600
+   ],
+   [
+    "dieta hipossodica",
+    2900
+   ],
+   [
+    "dieta isocalorica",
+    2900
+   ],
+   [
+    "nutrólogo pode passar dieta",
+    1300
+   ],
+   [
+    "dieta low food map",
+    190
+   ],
+   [
+    "dieta food map",
+    170
+   ]
+  ]
+ }
+}

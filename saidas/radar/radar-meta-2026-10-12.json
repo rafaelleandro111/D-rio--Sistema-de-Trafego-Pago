@@ -1,0 +1,74 @@
+[
+ {
+  "nicho": "Educação",
+  "ofertas": 43,
+  "anunciantes": 26,
+  "copias": 60
+ },
+ {
+  "nicho": "Culinária",
+  "ofertas": 36,
+  "anunciantes": 17,
+  "copias": 67
+ },
+ {
+  "nicho": "Emagrecimento",
+  "ofertas": 25,
+  "anunciantes": 16,
+  "copias": 49
+ },
+ {
+  "nicho": "Vícios",
+  "ofertas": 18,
+  "anunciantes": 12,
+  "copias": 28
+ },
+ {
+  "nicho": "Saúde",
+  "ofertas": 15,
+  "anunciantes": 14,
+  "copias": 22
+ },
+ {
+  "nicho": "Relacionamento",
+  "ofertas": 14,
+  "anunciantes": 10,
+  "copias": 46
+ },
+ {
+  "nicho": "Maternidade",
+  "ofertas": 13,
+  "anunciantes": 7,
+  "copias": 28
+ },
+ {
+  "nicho": "Espiritualidade",
+  "ofertas": 8,
+  "anunciantes": 8,
+  "copias": 9
+ },
+ {
+  "nicho": "Fitness",
+  "ofertas": 7,
+  "anunciantes": 3,
+  "copias": 7
+ },
+ {
+  "nicho": "Dinheiro",
+  "ofertas": 4,
+  "anunciantes": 4,
+  "copias": 8
+ },
+ {
+  "nicho": "Beleza",
+  "ofertas": 2,
+  "anunciantes": 1,
+  "copias": 8
+ },
+ {
+  "nicho": "Pets",
+  "ofertas": 2,
+  "anunciantes": 2,
+  "copias": 2
+ }
+]
